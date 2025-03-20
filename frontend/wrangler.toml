@@ -3,20 +3,17 @@ name = "emotiontrack-frontend"
 compatibility_date = "2023-10-30"
 compatibility_flags = ["nodejs_compat"]
 
-# Build configuration
+# Configuración correcta para Cloudflare Pages
 [build]
 command = "npm run build && npm run export"
-publish = "out"
+publish = "out"  # <-- CORREGIDO: Se quitó "frontend/"
 
-# Configuración específica para Cloudflare Pages
-pages_build_output_dir = "out"
-
-# Environment variables for production
+# Variables de entorno para producción
 [env.production]
-  NEXT_PUBLIC_API_URL = "https://emotiontrack-backend.workers.dev"
-  NEXT_PUBLIC_AI_API_URL = "https://emotiontrack-ai.workers.dev"
+NEXT_PUBLIC_API_URL = "https://emotiontrack-backend.workers.dev"
+NEXT_PUBLIC_AI_API_URL = "https://emotiontrack-ai.workers.dev"
 
-# Environment variables for preview/development
+# Variables de entorno para desarrollo/preview
 [env.preview]
-  NEXT_PUBLIC_API_URL = "https://emotiontrack-backend-preview.workers.dev"
-  NEXT_PUBLIC_AI_API_URL = "https://emotiontrack-ai-preview.workers.dev"
+NEXT_PUBLIC_API_URL = "https://emotiontrack-backend-preview.workers.dev"
+NEXT_PUBLIC_AI_API_URL = "https://emotiontrack-ai-preview.workers.dev"
