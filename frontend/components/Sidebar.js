@@ -1,19 +1,20 @@
 import { Link } from "react-router-dom";
+import { HomeIcon, ChartBarIcon, UserIcon } from "@heroicons/react/outline";
 
 export function Sidebar() {
   return (
-    <aside className="w-64 bg-gray-900 text-white h-full p-4">
-      <h2 className="text-lg font-bold mb-4">eMotionTrack</h2>
-      <nav>
-        <ul>
-          <li><Link to="/dashboard" className="block py-2 px-4 hover:bg-gray-700">Dashboard</Link></li>
-          <li><Link to="/wellness" className="block py-2 px-4 hover:bg-gray-700">Bienestar</Link></li>
-          <li><Link to="/gamification" className="block py-2 px-4 hover:bg-gray-700">Gamificación</Link></li>
-          <li><Link to="/flexibility" className="block py-2 px-4 hover:bg-gray-700">Flexibilidad</Link></li>
-          <li><Link to="/culture-simulator" className="block py-2 px-4 hover:bg-gray-700">Cultura</Link></li>
-          <li><Link to="/csrd" className="block py-2 px-4 hover:bg-gray-700">CSRD</Link></li>
-          <li><Link to="/reports" className="block py-2 px-4 hover:bg-gray-700">Reportes</Link></li>
-        </ul>
+    <aside className="w-64 bg-blue-600 text-white p-6">
+      <h2 className="text-2xl font-bold">eMotionTrack</h2>
+      <nav className="mt-6">
+        <Link className="flex items-center py-2 hover:bg-blue-500 px-3 rounded" to="/dashboard">
+          <HomeIcon className="w-6 h-6 mr-3" /> Dashboard
+        </Link>
+        <Link className="flex items-center py-2 hover:bg-blue-500 px-3 rounded" to="/wellness">
+          <ChartBarIcon className="w-6 h-6 mr-3" /> Bienestar
+        </Link>
+        <Link className="flex items-center py-2 hover:bg-blue-500 px-3 rounded" to="/flexibility">
+          <UserIcon className="w-6 h-6 mr-3" /> Flexibilidad
+        </Link>
       </nav>
     </aside>
   );
