@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/xRLjZzL12vFnzXSt9B5Q9/_buildManifest.js",
-    "static/xRLjZzL12vFnzXSt9B5Q9/_ssgManifest.js"
+    "static/tr6zd0a-ONsi1RmyzGQ06/_buildManifest.js",
+    "static/tr6zd0a-ONsi1RmyzGQ06/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -15,6 +15,44 @@
       "static/chunks/framework-6d18543c2c368b0c.js",
       "static/chunks/main-98f90997f04b84b0.js",
       "static/chunks/pages/index-930c0792a3e0a4ab.js"
+    ],
+    "/CSRD": [
+      "static/chunks/webpack-fd8027ecb5121007.js",
+      "static/chunks/framework-6d18543c2c368b0c.js",
+      "static/chunks/main-98f90997f04b84b0.js",
+      "static/chunks/pages/CSRD-6fb7985d47fd17e9.js"
+    ],
+    "/CultureSimulator": [
+      "static/chunks/webpack-fd8027ecb5121007.js",
+      "static/chunks/framework-6d18543c2c368b0c.js",
+      "static/chunks/main-98f90997f04b84b0.js",
+      "static/chunks/ee8b1517-f2467f5baf770860.js",
+      "static/chunks/606-e3dc5b90e01d3bf5.js",
+      "static/chunks/pages/CultureSimulator-4102ed9e55b66954.js"
+    ],
+    "/Flexibility": [
+      "static/chunks/webpack-fd8027ecb5121007.js",
+      "static/chunks/framework-6d18543c2c368b0c.js",
+      "static/chunks/main-98f90997f04b84b0.js",
+      "static/chunks/pages/Flexibility-e99e6855e822f3cc.js"
+    ],
+    "/Gamification": [
+      "static/chunks/webpack-fd8027ecb5121007.js",
+      "static/chunks/framework-6d18543c2c368b0c.js",
+      "static/chunks/main-98f90997f04b84b0.js",
+      "static/chunks/pages/Gamification-04a63d578ec343d7.js"
+    ],
+    "/Reports": [
+      "static/chunks/webpack-fd8027ecb5121007.js",
+      "static/chunks/framework-6d18543c2c368b0c.js",
+      "static/chunks/main-98f90997f04b84b0.js",
+      "static/chunks/pages/Reports-12c9864fff405ae1.js"
+    ],
+    "/Wellness": [
+      "static/chunks/webpack-fd8027ecb5121007.js",
+      "static/chunks/framework-6d18543c2c368b0c.js",
+      "static/chunks/main-98f90997f04b84b0.js",
+      "static/chunks/pages/Wellness-ba139837ce17b369.js"
     ],
     "/_app": [
       "static/chunks/webpack-fd8027ecb5121007.js",
