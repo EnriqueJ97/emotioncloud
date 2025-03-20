@@ -6,13 +6,11 @@ const nextConfig = {
     domains: ['images.unsplash.com'],
     unoptimized: true
   },
-  // Configuración específica para Cloudflare Pages
   experimental: {
     esmExternals: true
   },
-  // 🚀 Ajustes para que Cloudflare Pages maneje las rutas correctamente
-  output: "export",  // Indica que Next.js debe generar archivos estáticos
-  trailingSlash: true // Asegura que las rutas terminen en "/"
+  output: "export", // 🔥 Asegura que Next.js genere HTML estático para Cloudflare Pages
+  trailingSlash: true // 🔥 Asegura que las rutas sean compatibles con Cloudflare
 };
 
 module.exports = nextConfig;
