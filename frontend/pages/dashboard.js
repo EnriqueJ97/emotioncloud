@@ -4,7 +4,13 @@ import { Sidebar } from "../components/Sidebar";
 import { Header } from "../components/Header";
 
 export default function Dashboard() {
-  const { logout } = useContext(AuthContext);
+  const auth = useContext(AuthContext);
+
+  if (!auth) {
+    return <p>Error cargando la autenticación...</p>;
+  }
+
+  const { logout } = auth;
 
   return (
     <div className="flex h-screen bg-gray-100">
