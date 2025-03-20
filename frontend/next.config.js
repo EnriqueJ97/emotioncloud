@@ -8,9 +8,11 @@ const nextConfig = {
   },
   // Configuración específica para Cloudflare Pages
   experimental: {
-    // Habilitar características compatibles con Cloudflare Pages
     esmExternals: true
-  }
-}
+  },
+  // 🚀 Ajustes para que Cloudflare Pages maneje las rutas correctamente
+  output: "export",  // Indica que Next.js debe generar archivos estáticos
+  trailingSlash: true // Asegura que las rutas terminen en "/"
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
