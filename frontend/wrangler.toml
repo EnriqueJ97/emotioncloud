@@ -6,7 +6,7 @@ compatibility_flags = ["nodejs_compat"]
 # Build configuration
 [build]
 command = "npm run build && npm run export"
-publish = "frontend/out"
+publish = "out"
 
 # Configuración específica para Cloudflare Pages
 pages_build_output_dir = "out"
