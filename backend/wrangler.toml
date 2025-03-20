@@ -1,0 +1,24 @@
+name = "emotiontrack-backend"
+main = "src/index.js"
+compatibility_date = "2023-10-30"
+compatibility_flags = ["nodejs_compat"]
+
+# Configuración para D1 (base de datos)
+[[d1_databases]]
+binding = "DB"
+database_name = "emotiontrack-db"
+database_id = "placeholder-id" # Esto se actualizará al crear la base de datos real
+
+# Variables de entorno
+[vars]
+ENVIRONMENT = "production"
+JWT_SECRET = "cambiar-esto-en-produccion"
+
+# Configuración de rutas
+[routes]
+pattern = "/api/*"
+zone_name = "tu-dominio.com" # Actualizar con tu dominio real
+
+# Configuración para desarrollo local
+[dev]
+port = 8787

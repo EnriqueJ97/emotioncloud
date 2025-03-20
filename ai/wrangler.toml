@@ -1,0 +1,17 @@
+name = "emotiontrack-ai"
+main = "src/index.js"
+compatibility_date = "2023-10-30"
+compatibility_flags = ["nodejs_compat"]
+
+# Variables de entorno
+[vars]
+ENVIRONMENT = "production"
+
+# Configuración de rutas
+[routes]
+pattern = "/api/ia/*"
+zone_name = "tu-dominio.com" # Actualizar con tu dominio real
+
+# Configuración para desarrollo local
+[dev]
+port = 8788

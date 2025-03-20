@@ -1,0 +1,21 @@
+# This is a basic configuration file for Cloudflare Pages
+# It tells Cloudflare how to build and deploy your Next.js application
+
+name = "emotiontrack-frontend"
+compatibility_date = "2023-10-30"
+compatibility_flags = ["nodejs_compat"]
+
+# Build configuration
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+# Environment variables for production
+[env.production]
+  NEXT_PUBLIC_API_URL = "https://emotiontrack-backend.workers.dev"
+  NEXT_PUBLIC_AI_API_URL = "https://emotiontrack-ai.workers.dev"
+
+# Environment variables for preview/development
+[env.preview]
+  NEXT_PUBLIC_API_URL = "https://emotiontrack-backend-preview.workers.dev"
+  NEXT_PUBLIC_AI_API_URL = "https://emotiontrack-ai-preview.workers.dev"

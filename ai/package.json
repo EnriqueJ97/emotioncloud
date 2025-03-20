@@ -1,0 +1,14 @@
+{
+  "name": "emotiontrack-ai",
+  "version": "1.0.0",
+  "description": "Componente de IA para eMotionTrack SaaS de bienestar organizacional",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "wrangler": "^3.19.0"
+  }
+}
